@@ -23,16 +23,9 @@ def create_script(browser_name):
         f.write(f'''from selenium import webdriver
 from selenium.webdriver.{browser_name.lower()}.service import Service
 from webdriver_manager.{browser_name.lower()} import {driver}
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
-from dotenv import load_dotenv
-import os
 import time
 
-load_dotenv()
-driver_path = os.getenv("SELENIUM_DRIVER_PATH")
-        
 def main():
     service = Service(executable_path={driver}().install())
     driver = webdriver.{browser_name.capitalize()}(service=service)
