@@ -40,6 +40,7 @@ def main():
     driver.get(site)
     driver.implicitly_wait(10000)
     time.sleep(10)
+    driver.quit()
 
 if __name__ == "__main__":
     main()''')
