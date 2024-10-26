@@ -3,20 +3,21 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "selenium_make"
+name = "selenium-make"
 version = "0.0.1"
 authors = [
   { name="Dilraj Singh", email="dilraj082@gmail.com" },
 ]
-description = "A custom CLI command to setup selenium script and installing browser driver for automation."
+description = "A simple CLI tool to set up Selenium scripts and install browser drivers for automation."
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
-keywords = ["selenium", "chrome", "firefox", "script", "automation"]
+keywords = ["selenium", "chrome", "firefox", "automation", "cli"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "Library :: Selenium",
     "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
 [project.urls]

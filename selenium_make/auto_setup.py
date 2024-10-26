@@ -38,4 +38,4 @@ def main():
 if __name__ == "__main__":
     main()''')
         
-    print("Created file: script.py")
+    print("     Created file: script.py")

@@ -14,6 +14,8 @@ def main():
     if args.command == "init":
         browser_name = args.browser_name
         create_script(browser_name)
+        print("     run the following command in terminal")
+        print("     python script.py")
     
 
 if __name__ == "__main__":
