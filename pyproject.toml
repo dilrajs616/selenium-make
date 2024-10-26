@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "selenium_make"
+version = "0.0.1"
+authors = [
+  { name="Dilraj Singh", email="dilraj082@gmail.com" },
+]
+description = "A custom CLI command to setup selenium script and installing browser driver for automation."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["selenium", "chrome", "firefox", "script", "automation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Library :: Selenium",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/dilrajs616/selenium-make"
+Issues = "https://github.com/dilrajs616/selenium-make/discussions"
+
+[project.scripts]
+slm = "selenium_make:main"
