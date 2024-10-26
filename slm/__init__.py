@@ -1,5 +1,4 @@
 import argparse
-from utils import download_driver, update_env
 from auto_setup import create_script
 
 def main():
@@ -14,9 +13,6 @@ def main():
 
     if args.command == "init":
         browser_name = args.browser_name
-        driver_path = download_driver(browser_name)
-        update_env(driver_path)
-        print(f"Driver for {browser_name} installed at {driver_path} and path updated in .env")
         create_script(browser_name)
     
 
